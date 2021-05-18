@@ -3,7 +3,7 @@
 This repo contains data and code for a web app designed for the visualization and analysis of geospatial data for the ENVS3 course. 
 
 ### Folder Structure
-* Module Data: contains .csv files with the raw parish-level data used in the assignment. The current versions of the applications use parish_data_v6.csv
+* <u>Module Data:</u> contains .csv files with the raw parish-level data used in the assignment. The current versions of the applications use parish_data_v6.csv
   * The git_shapefiles subfolder contains .geojson files used for the map visualizations. The current versions of the applications use parish_data_v6.json
 * Module Applications contains the following subfolders:
   * Colab Notebook: contains a single .ipynb file for the Colab Notebook application. This was used as a mockup for the standalone Netlify web application.
