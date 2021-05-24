@@ -272,7 +272,7 @@ def tab_content(active_tab):
         #fourth tab provides info on all of the data included in the app and the sources
         return html.Div([
             html.Div([html.H5('Louisiana Dataset')],style={'padding-left': '10px','padding-top': '10px','font-weight': 'bold'}),
-            html.Div([html.P('The dataset you will be working with includes 14 unique variables for'\
+            html.Div([html.P('The dataset you will be working with includes 13 unique variables for'\
                              ' all 64 parishes (counties) of Louisiana. Below is a description of each variable'\
                              ' and the data sources where they were retrieved from:')],
                              style={'padding-left' : '10px','padding-right': '10px','font-size':'13pt'}),
