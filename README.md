@@ -7,7 +7,7 @@ This repo contains data and code for a web app designed for the visualization an
 
 ### Folder Structure
 * Text files, Procfile, app.py, and static/images: code and files referenced by Heroku for building the web application.
-* Module Data: contains .csv files with the raw parish-level data used in the assignment. The current versions of the applications use parish_data_v6.csv
+* Module Data: contains .csv files with the raw parish-level data used in the assignment. The current versions of the applications use parish_data_v6.csv, the v4.csv file contains additional variables not used in the final version.
   * The git_shapefiles subfolder contains .geojson files used for the map visualizations. The current versions of the applications use parish_data_v6.json
 * Module Applications contains the following subfolders:
   * Colab Notebook: contains a single .ipynb file for the Colab Notebook application. This was used as a mockup for the standalone Heroku web application.
