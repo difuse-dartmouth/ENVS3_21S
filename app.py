@@ -159,7 +159,7 @@ default_fig1 = draw_map(variable_list[0], covid_waves[0], color_scales[2])
 #define Dash app, reference Dash Bootstrap as external stylsheet
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 #reference Dartmouth logo in Git repo for navbar brand
-dartmouth_logo = "https://github.com/difuse-dartmouth/21s_ENVS3/blob/main/static/images/D-Pine_RGB.png"
+dartmouth_logo = "https://github.com/difuse-dartmouth/21s_ENVS3/raw/main/static/images/D-Pine_RGB.png?raw=true"
 server = app.server
 
 #define layout of app interface including navbar with title and brand and then the tabs for each graph
