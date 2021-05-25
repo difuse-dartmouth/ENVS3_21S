@@ -122,7 +122,7 @@ default_fig3.update_layout(margin={"r":0,"t":10,"l":100,"b":50})
 default_fig3.update_traces(marker_size=10,marker_color="black")
 default_fig3.update_layout(hovermode='x')
 default_fig3.update_xaxes(title="Population",showgrid=True,title_font_size=18,tickfont_size=15,automargin=True)
-default_fig3.update_yaxes(title="Population",showgrid=True,title_font_size=18,tickfont_size=15,automargin=True)
+default_fig3.update_yaxes(title="First Wave of Covid Deaths per 10k",showgrid=True,title_font_size=18,tickfont_size=15,automargin=True)
 
 # Function for drawing the interactive map
 def draw_map(var, wave, color):
