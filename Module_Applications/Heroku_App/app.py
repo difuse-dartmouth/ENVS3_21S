@@ -117,7 +117,7 @@ df3 = df[['Parish Name']]
 regr_list = ['Off','On']
 
 #create default figure that will appear when user opens tab in app
-default_fig3 = px.scatter(df1, x="Population", y="Population",template="simple_white")
+default_fig3 = px.scatter(df1, x="Population", y="First Wave of Covid Deaths per 10k",template="simple_white")
 default_fig3.update_layout(margin={"r":0,"t":10,"l":100,"b":50})
 default_fig3.update_traces(marker_size=10,marker_color="black")
 default_fig3.update_layout(hovermode='x')
@@ -143,7 +143,7 @@ def draw_map(var, wave, color):
                                    marker=go.scattermapbox.Marker(size=scaled[wave],color='Tomato'),
                                    text=df[label], hoverinfo="text", name=wave,
                                    ))
-    
+
     fig.update_layout(mapbox_style="carto-positron",
                       legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
                       showlegend=True, mapbox_zoom=6,
@@ -154,7 +154,7 @@ def draw_map(var, wave, color):
     return fig
 
 #this is the default map before anything is selected from dropdown
-default_fig1 = draw_map(variable_list[0], covid_waves[0], color_scales[2])
+default_fig1 = draw_map(variable_list1[0], covid_waves[0], color_scales[2])
 
 #define Dash app, reference Dash Bootstrap as external stylsheet
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -279,33 +279,33 @@ def tab_content(active_tab):
             html.Div([
                     html.Ul([
                         dcc.Markdown('* **First Wave Covid Deaths per 10k:** Deaths per 10,000 people'\
-                                         'for the first COVID-19 wave defined as from 1/22/2020 - 7/1/2020<sup>4</sup>',
+                                         'for the first COVID-19 wave defined as from 1/22/2020 - 7/1/2020.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Second Wave Covid Deaths per 10k:** Deaths per 10,000 people for the'\
-                                         'second COVID-19 wave, defined as being from 7/1/2020 - 11/1/2020.<sup>4</sup>',
+                                         'second COVID-19 wave, defined as being from 7/1/2020 - 11/1/2020.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Third Wave Covid Deaths per 10k:** Deaths per 10,000 people '\
-                                     'for the third COVID-19 wave, defined as being from 11/1/2020 - 4/28/21.<sup>4</sup>',
+                                     'for the third COVID-19 wave, defined as being from 11/1/2020 - 4/28/21.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Covid Deaths per 10k thru 4/28/21:** Cumulative deaths per 10,000 people for '\
-                                     'the COVID-19 pandemic from 1/22/2020 - 4/28/21.<sup>4</sup>',
+                                     'the COVID-19 pandemic from 1/22/2020 - 4/28/21.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
-                        dcc.Markdown('* **Population:** Population for the parish based upon 2020 Census.<sup>1</sup>',
+                        dcc.Markdown('* **Population:** Population for the parish based upon 2020 Census.<sup>2</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
-                        dcc.Markdown('* **Median Household Income:** Median household income.<sup>2</sup>',
+                        dcc.Markdown('* **Median Household Income:** Median household income.<sup>3</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Percent 65 and over:** Percentage of total county population that is'\
-                                     ' 65 years of age and older.<sup>2</sup>',
+                                     ' 65 years of age and older.<sup>3</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Percent Black:** Percentage of population that is non-Hispanic Black or'\
-                                     ' African American.<sup>2</sup>',
+                                     ' African American.<sup>3</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Poverty Rate:** percentage of population living below the poverty level.'\
@@ -316,7 +316,7 @@ def tab_content(active_tab):
                                      ' geographically, but they are updated for inflation using the Consumer Price'\
                                      ' Index (CPI-U). The official poverty definition uses money income before taxes'\
                                      ' and does not include capital gains or noncash benefits (such as public housing,'\
-                                     ' Medicaid, and food stamps).<sup>10</sup>',
+                                     ' Medicaid, and food stamps).<sup>4</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt','padding-right': '15px'}),
                         dcc.Markdown('* **Percent Rural:** Percentage of population living in a rural area.<sup>5</sup>',
@@ -331,46 +331,46 @@ def tab_content(active_tab):
                                      ' appropriate. A hazard index (HI) of 1 or lower means air toxics are unlikely'\
                                      ' to cause adverse noncancer health effects over a lifetime of exposure. The RH'\
                                      ' data is provided by census tract, so an average for the parish is computed as the'\
-                                     ' weighted average by the population for the entire parish.<sup>3</sup>',
+                                     ' weighted average by the population for the entire parish.<sup>6</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt','padding-right': '15px'}),
                         dcc.Markdown('* **TRI Total On Site Air Release (pounds):** The amount of toxic emissions'\
                                      ' released on site at all facilities in pounds within a parish for'\
-                                     ' the entire year of 2019.<sup>9</sup>',
+                                     ' the entire year of 2019.<sup>7</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Cancer Alley:** Whether parish is a part of “Cancer Alley” in Louisiana.'\
                                      ' Variable is binary (meaning it is either a 0 or 1 value), where 1 ='\
-                                     ' Cancer Alley Parish.<sup>7</sup>',
+                                     ' Cancer Alley Parish.<sup>8</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'})
                     ],style={'padding-left': '25px'}),
                 html.Div([
-                    dcc.Markdown('<sup>1</sup>Retrieved from usafacts.org, data from 2020 US census.',
+                    dcc.Markdown('<sup>1</sup>Retrieved from usafacts.org, data from the CDC and Louisiana'\
+                                 ' Department of Health.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>2</sup>Retrieved from the 2020 County Health Rankings, data from 2018 census.',
+                    dcc.Markdown('<sup>2</sup>Retrieved from usafacts.org, data from 2020 US census.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>3</sup>Data from the 2014 National Air Toxics Assessment (EPA).',
+                    dcc.Markdown('<sup>3</sup>Retrieved from the 2020 County Health Rankings, data from 2018 census.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>4</sup>Retrieved from usafacts.org, data from the CDC and Louisiana'\
-                                 'Department of Health.',
+                    dcc.Markdown('<sup>4</sup>Data from the 2020 Census.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
                     dcc.Markdown('<sup>5</sup>Retrieved from the 2020 County Health Rankings, data from 2010 census.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>7</sup>Based on the definition of Cancer Alley in James et al. 2012'\
-                                 '(https://www.mdpi.com/1660-4601/9/12/4365/htm).',
+                    dcc.Markdown('<sup>6</sup>Data from the 2014 National Air Toxics Assessment (EPA).',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>9</sup>Data is from the 2019 Toxics Release Inventory (TRI) and is summed for'\
+                    dcc.Markdown('<sup>7</sup>Data is from the 2019 Toxics Release Inventory (TRI) and is summed for'\
                                  ' all facilities within a parish.',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
-                    dcc.Markdown('<sup>10</sup>Data from the 2020 Census.',
+                    dcc.Markdown('<sup>8</sup>Based on the definition of Cancer Alley in James et al. 2012'\
+                                 ' (https://www.mdpi.com/1660-4601/9/12/4365/htm).',
                                      dangerously_allow_html=True,
                                     style={'padding-left': '10px','font-size': '13pt'}),
                 ])
@@ -527,7 +527,7 @@ def update_graph(x_variable, y_variable,regression):
                 p_value2 = ('P > |t| = <0.01')
             fig.add_annotation(xref='paper',yref='paper', x=0.001, y=0.999,
                 text=p_value2,showarrow=False,font=dict(size=18))
-            fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.97,
+            fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.96,
                 text=r2_eq,showarrow=False,font=dict(size=18))
             fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.999,
                 text=eq,showarrow=False,font=dict(size=18))
