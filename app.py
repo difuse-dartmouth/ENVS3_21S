@@ -154,7 +154,7 @@ def draw_map(var, wave, color):
     return fig
 
 #this is the default map before anything is selected from dropdown
-default_fig1 = draw_map(variable_list[0], covid_waves[0], color_scales[2])
+default_fig1 = draw_map(variable_list1[0], covid_waves[0], color_scales[2])
 
 #define Dash app, reference Dash Bootstrap as external stylsheet
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -527,7 +527,7 @@ def update_graph(x_variable, y_variable,regression):
                 p_value2 = ('P > |t| = <0.01')
             fig.add_annotation(xref='paper',yref='paper', x=0.001, y=0.999,
                 text=p_value2,showarrow=False,font=dict(size=18))
-            fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.97,
+            fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.96,
                 text=r2_eq,showarrow=False,font=dict(size=18))
             fig.add_annotation(xref='paper',yref='paper', x=0.99, y=0.999,
                 text=eq,showarrow=False,font=dict(size=18))
