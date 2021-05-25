@@ -279,19 +279,19 @@ def tab_content(active_tab):
             html.Div([
                     html.Ul([
                         dcc.Markdown('* **First Wave Covid Deaths per 10k:** Deaths per 10,000 people'\
-                                         'for the first COVID-19 wave defined as from 1/22/2020 - 7/1/2020.<sup>1</sup>',
+                                         ' for the first COVID-19 wave, defined as from 1/22/2020 - 7/1/2020.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Second Wave Covid Deaths per 10k:** Deaths per 10,000 people for the'\
-                                         'second COVID-19 wave, defined as being from 7/1/2020 - 11/1/2020.<sup>1</sup>',
+                                         ' second COVID-19 wave, defined as being from 7/1/2020 - 11/1/2020.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
-                        dcc.Markdown('* **Third Wave Covid Deaths per 10k:** Deaths per 10,000 people '\
-                                     'for the third COVID-19 wave, defined as being from 11/1/2020 - 4/28/21.<sup>1</sup>',
+                        dcc.Markdown('* **Third Wave Covid Deaths per 10k:** Deaths per 10,000 people'\
+                                     ' for the third COVID-19 wave, defined as being from 11/1/2020 - 4/28/21.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
-                        dcc.Markdown('* **Covid Deaths per 10k thru 4/28/21:** Cumulative deaths per 10,000 people for '\
-                                     'the COVID-19 pandemic from 1/22/2020 - 4/28/21.<sup>1</sup>',
+                        dcc.Markdown('* **Covid Deaths per 10k thru 4/28/21:** Cumulative deaths per 10,000 people for'\
+                                     ' the COVID-19 pandemic from 1/22/2020 - 4/28/21.<sup>1</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
                         dcc.Markdown('* **Population:** Population for the parish based upon 2020 Census.<sup>2</sup>',
@@ -308,7 +308,7 @@ def tab_content(active_tab):
                                      ' African American.<sup>3</sup>',
                                      dangerously_allow_html=True,
                                     style={'font-size': '13pt'}),
-                        dcc.Markdown('* **Poverty Rate:** percentage of population living below the poverty level.'\
+                        dcc.Markdown('* **Poverty Rate:** Percentage of population living below the poverty level.'\
                                      ' The Census Bureau uses a set of money income thresholds that vary by family'\
                                      ' size and composition to determine who is in poverty. If a family\'s total income'\
                                      ' is less than the family\'s threshold, then that family and every individual in'\
