@@ -1,6 +1,6 @@
 # ENVS3 DIFUSE Module
 ## James Busch & William Chen
-This repo contains data and code for a web app designed for the visualization and analysis of geospatial data for the ENVS3 course. 
+This repo contains data and code for a web app designed for the visualization and analysis of geospatial data for the ENVS3 course.  
 
 ### ENVS3 Heroku Web Application
 * The web application developed for this project can be accessed at https://envs3-web-app.herokuapp.com/
