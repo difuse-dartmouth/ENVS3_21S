@@ -3,7 +3,7 @@
 This repo contains data and code for a web app designed for the visualization and analysis of geospatial data for the ENVS3 course.  
 
 ### ENVS3 Heroku Web Application
-* The web application developed for this project can be accessed at https://envs3-app.onrender.com/
+* The web application developed for this project can be accessed at https://envs3-app-yaex.onrender.com/
 
 ### Folder Structure
 * Text files, Procfile, app.py, and static/images: code and files referenced by Heroku for building the web application.
