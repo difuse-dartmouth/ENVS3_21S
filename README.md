@@ -27,7 +27,7 @@ Students use demographics and environmental data coupled with COVID-19 mortality
 The module uses statistical data from Louisiana parishes including demographics, population characteristics, toxic emissions, and respiratory hazard, couple with mortality data from four COVID waves.
 
 ### Platform
-The module is run through a hosted application.  The underlying code is in python.
+The module is hosted as an application on <a href="https://envs3-app-yaex.onrender.com/">render</a>.  The underlying code is in python.
 
 ## Schedule and Links
 
