@@ -38,7 +38,7 @@ Use this page to get an idea of the timeline of the module, what components are 
 | Week 1 | In class          |Introduction to modules, variables, techniques, and colab| | [Introductory materials](completed_module/components/assignment0/README.md) |
 
 ## Course Information
-This module was developed for a environmental science course, < a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Environmental-Studies-Program/ENVS-Environmental-Studies/ENVS-3">Environment and Society</a>, at Dartmouth College which explores the interconnections and impacts between environmental and societal factors.  The course is introductory and draws students from different interests and backgrounds.
+This module was developed for a environmental science course, <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Environmental-Studies-Program/ENVS-Environmental-Studies/ENVS-3">Environment and Society</a>, at Dartmouth College which explores the interconnections and impacts between environmental and societal factors.  The course is introductory and draws students from different interests and backgrounds.
 ---
 
 | <a href="https://github.com/difuse-dartmouth/covid-wave-environmental-map-regression/archive/refs/heads/main.zip"><img src="download-all.png" alt="Download the entire module" align="center" style="width: 4in;"></a>| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="width=2in" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. |
