@@ -38,6 +38,7 @@ Use this page to get an idea of the timeline of the module, what components are 
 |  | In class          |Introduction to module, variables, techniques, and and the application| |  | |
 |        | Out of class      |Read two papers in support of the work | <a href="https://advances.sciencemag.org/content/7/18/eabf4491">	C. W. Tessum, D. A. Paolella, S. E. Chambliss, J. S. Apte, J. D. Hill, J. D. Marshall, PM2.5 polluters disproportionately and systemically affect people of color in the United States. Sci. Adv. 7, (2021).</a> <br><br> <a href="https://www.liebertpub.com/doi/10.1089/ENV.2020.0021">Terrell, Kimberly A., and Wesley James. "Racial Disparities in Air Pollution Burden and COVID-19 Deaths in Louisiana, USA, in the Context of Long-Term Changes in Fine Particulate Pollution." Environmental Justice (2020).</a> | |
 |      | Out of class |A series of short answer questions guiding students through the module| | [Assignment 1](Module_Assignment_and_Instructions/ENVS3_Assignment_v3_short_answer.docx) |
+|      | In class    | Discussion of module outcomes| | |
 
 ## Course Information
 
