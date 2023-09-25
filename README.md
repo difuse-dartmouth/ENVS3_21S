@@ -13,7 +13,7 @@ This module was developed through the DIFUSE project at Dartmouth College and fu
 
 # Module Overview
 
-## Module
+## Web Interface
 <a href="https://envs3-app-yaex.onrender.com/">Click here to access the app.</a> The application is hosted on Render.
 
 ## Module Objective 
