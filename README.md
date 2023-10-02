@@ -12,6 +12,10 @@ This module was developed through the DIFUSE project at Dartmouth College and fu
 
 
 # Module Overview
+
+## Web Interface
+<a href="https://envs3-app-yaex.onrender.com/">Click here to access the app.</a> The application is hosted on Render.
+
 ## Module Objective 
 Give students exposure to data science through the analysis and visualization of data, and interpreting and communicating results in the context of examining the impact of environmental factors on COVID-19 mortality.
 
