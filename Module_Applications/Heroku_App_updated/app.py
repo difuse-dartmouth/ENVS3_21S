@@ -21,7 +21,10 @@ from statsmodels.stats.anova import anova_lm
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
+
 # https://stackoverflow.com/questions/71106940/cannot-import-name-centered-from-scipy-signal-signaltools
+import  scipy.signal.signaltools
+
 def _centered(arr, newsize):
     # Return the center newsize portion of the array.
     newsize = np.asarray(newsize)
